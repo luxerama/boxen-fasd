@@ -1,23 +1,22 @@
-# Template Puppet Module for Boxen
+# Fasd Puppet Module for Boxen
 
-An example of how we write Puppet modules for Boxen. Replace this
-paragraph with a short explanation of what the heck makes your module
-useful.
+This is a boxen module which installs [fasd](https://github.com/clvv/fasd) through brew
 
 ## Usage
 
 ```puppet
-boxen::example { 'best example ever':
-  salutation => 'fam'
-}
+include fasd
 ```
 
 ## Required Puppet Modules
 
 * `boxen`
-* `anything-else`
+* `homebrew`
 
 ## Development
 
-Write code. Run `script/cibuild` to test it. Check the `script`
-directory for other useful tools.
+Write code. Run one of the following tasks to test it:
+* `rake syntax`
+* `rake style`
+* `rake spec`
+* `rake build`
